@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;700&display=swap');
+
+body {
+    background: conic-gradient(at top right, snow, mistyrose) no-repeat;
+    background-size: 100% cover;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+};
+
+nav {
+    color: darkseagreen;
+    font-family: 'Pattaya', sans-serif;
+    font-weight: 200;
+    font-size: 2.3rem;
+    height: 100px;
+    display: block;
+    z-index: 1;
+    margin: 10px 0 20px 0;
+    padding: 20px 50px 0 50px;
+    animation: opacity 0.7s;
+    animation-timing-function: ease;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto;
+    padding: 0 10rem 5rem;
+    justify-content: center;
+    animation: opacity 0.5s;
+    animation-timing-function: ease;
+};
+
+@keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(-20px);
+      opacity: 0.6;
+    }
+  }
+
+
+.hero {
+   
+    margin: 5rem 0 0 0;
+    padding: 0px;
+
+    ul,li {
+        list-style: none;
+    }
+
+    .brand {
+        color: darkseagreen;
+        font-family: 'Pattaya', sans-serif;
+        text-transform: lowercase;
+        font-weight: 100;
+        text-align: left;
+        //width: 200px;
+        height: 15px;
+    }
+
+}
+
+.profile-card {
+    background-color: snow;
+    border-radius: 15px;
+    padding: 20px;
+    gap: 20px;
+    // height: 0;
+}
+.card-heading {
+    // margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    gap: 20px;
+}
+.card-middle {
+   display: block;
+   margin-top: 20px 0 20px;
+   // gap: 100px;
+}
+
+.sub{
+    font-size: 12px;
+}
+
+// .triangle-right {
+//     position:relative;
+//     width: 0;
+//     height: 0;
+//     left:900px;
+//     border-top: 20em solid transparent;
+//     border-bottom: 20em solid transparent;
+//     border-left: 40em solid lightblue;
+//     z-index: -2;
+// }
+
+ figure{
+    width:100px; /*container-width*/
+    height: 100px;
+    overflow: hidden; /*hide bounds of image */
+    margin:0; /*reset margin of figure tag*/
+    border-radius: 50%;
+ }
+ figure img{
+     display:block; /*remove inline-block spaces*/  
+     margin:-75% -25.5%;  /*add to other styles*/
+     width:155%;
+ }
+
+.main-card {
+    margin-left: 50px;
+    // justify-items: center;
+    padding: 20px;
+    // box-shadow: 2px solid;
+    // text-align: center;
+    color: black;
+    // width: 40vw;
+    // height: 100vh;
+   // border-radius: 25px;
+   // background-color: snow;
+
+
+   .main-card-heading {
+    font-size: 4rem;
+    color: darkseagreen;
+    font-weight: 200;
+
+    span {
+        font-weight: 700;
+    }
+
+   }
+
+}
+
+.main-btn-section button {
+    border: 0;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    background-color: darkseagreen;
+
+    &:hover {
+       opacity: 1;
+       color: white;
+       background: conic-gradient(at top right, darkseagreen, darkseagreen);
+    }
+}
+
+.middle{
+ background-color: snow;
+ padding: 10rem 15rem
+}
+
+.middle p {
+    text-align: center;
+    font-size: 3rem;
+    color: darkseagreen;
+    font-weight: 200;
+}
+
+.middle h3 {
+    font-weight: 200;
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+}
+
+.middle span {
+    font-weight: 700;
+    color: darkseagreen;
+}
+
+.middle span:nth-child(2) {
+    font-weight: 700;
+    color: lightblue;
+}
+
+.portfolio-cards {
+    margin-top: 1em; 
+    display: flex; 
+    flex-direction: column;
+}
+
+.portfolio-card {
+    margin: 0 auto;
+    background-color: snow;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-right: 4px solid lightblue ;
+    width: 550px;
+    gap: 50px;
+}
+
+.portfolio-card:nth-child(1),:nth-child(2) {
+    border-bottom: 0;
+}
+
+.portfolio-card:nth-child(1):hover{
+    border-right: 6px solid lightblue;
+}
+.portfolio-card:nth-child(2):hover{
+    border-right: 6px solid lightblue;
+}
+.portfolio-card:nth-child(3):hover{
+    border-right: 6px solid lightblue;
+}
+
+
+.middle--second {
+    background-color: snow;
+    padding: 6rem 15rem;
+    display: flex;
+    flex-direction: column;
+  
+    h2 {
+        position: relative;
+        left: 160px;
+        color: darkseagreen;
+        font-family: 'Pattaya', sans-serif;
+        font-weight: 200;
+        font-size: 2.3rem;
+        margin-bottom: 0;
+    }
+
+    p {
+        margin-top: 0;
+        font-size: 3rem;
+        font-weight: 300;
+        color: darkseagreen;
+        text-align: center;
+    }
+    span {
+        font-weight: 700;
+    }
+
+    img {
+        width: 64px;
+        margin: 5px;
+    }
+    img:hover {
+        transform:translateY(5px)
+    }
+    .adobe {
+        margin: 0 auto;
+    }
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: lightblue;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: lightblue transparent transparent transparent;
+  }
+
+.email {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 70px;
+}
+.email p {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    color: darkseagreen;
+    margin: 5px;
+}
+
+.email button {
+    margin: 0 0 20px;
+    align-self: center;
+    // justify-content: center;
+   // margin: 0 auto;
+    border: 0;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    background-color: darkseagreen;
+
+    &:hover {
+       opacity: 1;
+       color: white;
+       background: conic-gradient(at top right, darkseagreen, darkseagreen);
+       transform:translateY(2px)
+
+    }
+}
+
+footer {
+    p {
+    color: gray;
+    font-size: 11px;
+    text-align: center;
+    margin: 0 0;
+    padding: 0;
+    }
+}
