@@ -66,6 +66,10 @@ main {
 
 }
 
+.socialicon a {
+    text-decoration: none;
+}
+
 .profile-card {
     background-color: snow;
     border-radius: 15px;
@@ -92,16 +96,6 @@ main {
     font-size: 12px;
 }
 
-// .triangle-right {
-//     position:relative;
-//     width: 0;
-//     height: 0;
-//     left:900px;
-//     border-top: 20em solid transparent;
-//     border-bottom: 20em solid transparent;
-//     border-left: 40em solid lightblue;
-//     z-index: -2;
-// }
 
  figure{
     width:100px; /*container-width*/
@@ -189,6 +183,7 @@ main {
     margin-top: 1em; 
     display: flex; 
     flex-direction: column;
+    border: 3px;
 }
 
 .portfolio-card {
@@ -198,36 +193,42 @@ main {
     border: 1px solid #eee;
     border-right: 4px solid lightblue ;
     width: 550px;
-    gap: 50px;
 }
 
-.portfolio-card:nth-child(1),:nth-child(2) {
+.portfolio-card:nth-child(n) {
     border-bottom: 0;
 }
+.portfolio-card:nth-child(n):hover{
+    border-right: 6px solid lightblue;
+}
+.portfolio-card-discovery {
 
-.portfolio-card:nth-child(1):hover{
-    border-right: 6px solid lightblue;
-}
-.portfolio-card:nth-child(2):hover{
-    border-right: 6px solid lightblue;
-}
-.portfolio-card:nth-child(3):hover{
-    border-right: 6px solid lightblue;
-}
+   text-align: center; 
+   font-weight: 700; 
+   color: tomato;
+   text-transform: uppercase;
+   padding: 20px;
 
+}
 
 .middle-sub {
   
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: lightblue;
+// background: conic-gradient(at top right, snow, lightblue) no-repeat;
     padding: 10rem;
+    row-gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
 
         article {
             padding: 30px 20px 20px 20px;
-            border-radius: 25px;
-            border: 5px solid snow;
-            margin: 0 auto;
+            // border-radius: 25px;
+            border: 1px solid snow;
+            border-top: 5px solid snow;
+            // margin: 0 auto;
             justify-content: center;
             align-items: center;
         }
@@ -250,7 +251,7 @@ main {
 
 .middle--second {
     background-color: snow;
-    padding: 6rem 15rem;
+    padding: 8rem 15rem;
     display: flex;
     flex-direction: column;
   
@@ -308,8 +309,8 @@ main {
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
-    top: 100%;
-    left: 50%;
+    top: -5px;
+    right: 105%;
     margin-left: -60px;
     /* Position the tooltip text - see examples below! */
     position: absolute;
@@ -323,12 +324,12 @@ main {
   .tooltip-right .tooltiptext-right::after {
     content: " ";
     position: absolute;
-    top: 100%; /* At the bottom of the tooltip */
-    left: 50%;
-    margin-left: -5px;
+    top: 2px; /* At the bottom of the tooltip */
+    left: 105%;
+    margin-left: -7px;
     border-width: 5px;
     border-style: solid;
-    border-color: darkseagreen transparent transparent transparent;
+    border-color:  transparent transparent transparent darkseagreen;
   }
 
 
@@ -368,7 +369,7 @@ main {
 .email {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 50px 20px 80px;
     padding: 70px;
 }
 .email p {
@@ -377,6 +378,13 @@ main {
     font-weight: 700;
     color: darkseagreen;
     margin: 5px;
+}
+
+.email h4 {
+    margin-top: 0;
+    text-align: center;
+    font-weight: 300;
+    color: gray;
 }
 
 .email button {
@@ -389,22 +397,71 @@ main {
     width: 120px;
     height: 40px;
     background-color: darkseagreen;
+    color: snow;
 
     &:hover {
        opacity: 1;
        color: white;
        background: conic-gradient(at top right, darkseagreen, darkseagreen);
-       transform:translateY(2px)
+       transform:translateY(2px);
+       box-shadow: 3pt 3pt 0 0pt lightblue;
 
     }
 }
+.footer {
 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    justify-items: center;
+    color: mistyrose;
+    font-size: 14px;
+   
+    h3 {
+    font-size: 22px;
+   }
+
+    i {
+       margin:5px;
+      // transition: .2s;
+    }
+    i:hover {
+        // animation: opacity .4s ;
+        transform:translateY(2px);
+       // animation-timing-function: linear;
+        // overflow: hidden;
+       // box-shadow: 1pt 1pt 0 1pt lightblue;
+        opacity: .8;
+    }
+    // @keyframes opacity {
+    //     from {opacity: 10;}
+    //     to {opacity: .8; }
+    //   }
+
+/*
+    i::before {
+        border-radius: 50%;
+        box-shadow: 0pt 0pt 0pt 2pt ;
+        overflow: hidden;
+        //border: 2px solid;
+       // outline-style: groove;
+        // outline: 3px solid;
+       // outline-offset: 0px;
+        // background: mistyrose;
+    }
+    */
+}
 footer {
+    background: conic-gradient(at top left, snow, black) no-repeat;
+
     p {
-    color: gray;
+    text-transform: uppercase;
+    color: mistyrose;
     font-size: 11px;
     text-align: center;
-    margin: 0 0;
+    margin: 0;
     padding: 0;
+    align-self: end;
     }
 }
