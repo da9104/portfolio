@@ -1,5 +1,27 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;700&display=swap");
+:root {
+  --width: 100vw;
+  --full-width: 100vw;
+  --angle: -11deg;
+  /*-----------------
+  Magic Number Alert:
+
+  the 0.09719 is calculated by this formula:
+  tan(11°) / 2
+  11° is the current skewY value.
+  ------------------*/
+  --magic-number: 0.09719;
+  --skew-padding: calc(var(--width) * var(--magic-number));
+  --clip-padding: calc(var(--full-width) * var(--magic-number));
+}
+@media (min-width: 42em) {
+  :root {
+    --width: 42rem;
+  }
+}
+
 body {
   background: conic-gradient(at top right, snow, mistyrose) no-repeat;
   background-size: 100% cover;
@@ -81,6 +103,9 @@ main {
 .card-middle {
   display: block;
   margin-top: 20px 0 20px;
+}
+.card-middle ul, .card-middle li {
+  text-transform: uppercase;
 }
 
 .sub {
@@ -189,39 +214,83 @@ figure img {
 .portfolio-card-discovery {
   text-align: center;
   font-weight: 700;
-  color: tomato;
+  color: gray;
   text-transform: uppercase;
   padding: 20px;
 }
 
-.middle-sub {
-  display: flex;
-  flex-direction: row;
-  background-color: lightblue;
-  padding: 10rem;
-  row-gap: 5px;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
+.diagonal-box {
+  position: relative;
+  padding: var(--skew-padding) 0;
+  margin-top: -1px;
+  background: snow;
 }
-.middle-sub article {
-  padding: 30px 20px 20px 20px;
-  border: 1px solid snow;
-  border-top: 5px solid snow;
-  justify-content: center;
-  align-items: center;
+.diagonal-box:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: skewy(var(--angle));
+  transform-origin: 50% 0;
+  outline: 1px solid transparent;
+  backface-visibility: hidden;
 }
-.middle-sub i {
-  align-self: center;
-  justify-items: center;
-  color: snow;
-  text-align: center;
+
+.bg-one:before {
+  background: conic-gradient(at top right, mistyrose, lightblue);
+}
+
+.content {
+  max-width: var(--width);
   margin: 0 auto;
+  padding: 1.5em;
+  padding-top: 0;
+  position: relative;
+  margin-bottom: 5.5em;
+  /* -----------
+  enable the border to see, that the content
+  perfectly fits into the section withou
+  bleeding into the adjecting areas:
+  ------------ */
 }
-.middle-sub div {
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3%;
+  --translation: 0;
+}
+.boxes .box {
+  padding-top: 30px;
   text-transform: uppercase;
   font-weight: 700;
   color: snow;
+  text-align: center;
+  width: 100%;
+  height: 0;
+  padding-bottom: 80%;
+  border: 1px solid #fff;
+  background: #fff3;
+  transform: translateY(var(--translation));
+}
+.boxes .box:nth-child(1) {
+  --translation: calc(var(--skew-padding) * 1.5);
+}
+.boxes .box:nth-child(2) {
+  --translation: calc(var(--skew-padding) * 1);
+}
+.boxes .box:nth-child(3) {
+  --translation: calc(var(--skew-padding) * 0.5);
+}
+
+.box i {
+  margin: 0 auto;
+  align-self: center;
+  color: snow;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .middle--second {
@@ -280,8 +349,8 @@ figure img {
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
-  top: -5px;
-  right: 105%;
+  top: -3px;
+  left: 105%;
   margin-left: -60px;
   /* Position the tooltip text - see examples below! */
   position: absolute;
@@ -295,13 +364,13 @@ figure img {
 .tooltip-right .tooltiptext-right::after {
   content: " ";
   position: absolute;
-  top: 2px;
+  top: 3px;
   /* At the bottom of the tooltip */
-  left: 105%;
+  right: 99%;
   margin-left: -7px;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent transparent transparent darkseagreen;
+  border-color: transparent darkseagreen transparent transparent;
 }
 
 /* Tooltip text */
@@ -386,18 +455,6 @@ figure img {
   justify-items: center;
   color: mistyrose;
   font-size: 14px;
-  /*
-      i::before {
-          border-radius: 50%;
-          box-shadow: 0pt 0pt 0pt 2pt ;
-          overflow: hidden;
-          //border: 2px solid;
-         // outline-style: groove;
-          // outline: 3px solid;
-         // outline-offset: 0px;
-          // background: mistyrose;
-      }
-      */
 }
 .footer h3 {
   font-size: 22px;
@@ -408,6 +465,10 @@ figure img {
 .footer i:hover {
   transform: translateY(2px);
   opacity: 0.8;
+}
+
+.sns a {
+  text-decoration: none;
 }
 
 footer {
