@@ -43,6 +43,19 @@ nav {
     padding: 20px 50px 0 50px;
     animation: opacity 0.7s;
     animation-timing-function: ease;
+
+    span {
+        margin: 0 auto;
+        // display: flex;
+        justify-self: center;
+        align-self: center;
+        color: tomato;
+        text-align: center;
+        font-size: 11px;
+        font-weight: 700;
+        font-family: 'Source Sans Pro', sans-serif;
+        text-transform: uppercase;
+    }
 }
 
 main {
@@ -227,6 +240,7 @@ main {
     display: flex; 
     flex-direction: row;
     border: 3px;
+    gap: 20px;
 }
 
 .portfolio-card {
@@ -234,13 +248,15 @@ main {
     background-color: snow;
     padding: 20px;
     border: 1px solid #eee;
-    border-right: 4px solid lightblue ;
+    border-top: 4px solid lightblue ;
     width: 550px;
+    
 }
 
 .portfolio-card:nth-child(n):hover{
-    border-right: 6px solid lightblue;
+    border-top: 6px solid lightblue;
 }
+
 .portfolio-card-discovery {
 
    text-align: center; 
