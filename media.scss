@@ -1,0 +1,24 @@
+@media (min-width: 42em) {
+    .footer {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .middle--second {
+        padding: 8rem 15rem;
+    }
+
+    .dot {
+        left: -5.0em; 
+       // top: -3.3em;
+    }
+
+    .box {
+        padding-top: 30px;
+  
+    }
+
+    .boxes p {
+            font-size: 16px;
+    }
+}

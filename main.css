@@ -1,6 +1,28 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;700&display=swap");
+@media (min-width: 42em) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .middle--second {
+    padding: 8rem 15rem;
+  }
+
+  .dot {
+    left: -5em;
+  }
+
+  .box {
+    padding-top: 30px;
+  }
+
+  .boxes p {
+    font-size: 16px;
+  }
+}
 :root {
   --width: 100vw;
   --full-width: 100vw;
@@ -287,8 +309,11 @@ figure img {
   grid-gap: 3%;
   --translation: 0;
 }
+.boxes p {
+  font-size: 14px;
+}
 .boxes .box {
-  padding-top: 30px;
+  padding-top: 10px;
   text-transform: uppercase;
   font-weight: 700;
   color: snow;
@@ -324,13 +349,13 @@ figure img {
   margin: 1px;
   position: relative;
   display: block;
-  left: -4em;
-  top: -3.3em;
+  left: -3em;
+  top: -2em;
 }
 
 .middle--second {
   background-color: snow;
-  padding: 8rem 15rem;
+  padding: 5rem 3rem;
   display: flex;
   flex-direction: column;
 }
@@ -483,8 +508,9 @@ figure img {
 }
 
 .footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-left: 50px;
+  justify-content: center;
+  justify-self: center;
   margin-top: 30px;
   margin-bottom: 80px;
   justify-items: center;
@@ -496,6 +522,7 @@ figure img {
 }
 .footer i {
   margin: 5px;
+  margin-bottom: 25px;
 }
 .footer i:hover {
   transform: translateY(2px);
