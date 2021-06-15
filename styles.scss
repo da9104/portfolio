@@ -317,7 +317,7 @@ main {
     // margin: 0em 1em;
     
     --translation: 0;
-    
+
     .box {
       padding-top: 30px;
         text-transform: uppercase;
@@ -328,7 +328,7 @@ main {
       height: 0;
       padding-bottom: 80%;
       border: 1px solid #fff;
-      border-top: 5px solid #fff;
+      border-top: 15px solid #fff;
       background: #fff3;
       transform: translateY( var(--translation) );
 
@@ -344,6 +344,14 @@ main {
         color: snow;
         text-align: center;
         margin: 0 auto;
+    }
+
+    .dot {
+        color: gray; margin: 1px; 
+        position: relative; 
+        display: block; 
+        left: -4.0em; 
+        top: -3.3em;
     }
 
 
@@ -541,6 +549,12 @@ main {
     //     to {opacity: .8; }
     //   }
 }
+
+
+#eamil-btn {
+
+}
+
 
 .sns a{
     text-decoration: none;

@@ -297,7 +297,7 @@ figure img {
   height: 0;
   padding-bottom: 80%;
   border: 1px solid #fff;
-  border-top: 5px solid #fff;
+  border-top: 15px solid #fff;
   background: #fff3;
   transform: translateY(var(--translation));
 }
@@ -317,6 +317,15 @@ figure img {
   color: snow;
   text-align: center;
   margin: 0 auto;
+}
+
+.dot {
+  color: gray;
+  margin: 1px;
+  position: relative;
+  display: block;
+  left: -4em;
+  top: -3.3em;
 }
 
 .middle--second {
