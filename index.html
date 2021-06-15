@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DAMI KANG</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./charts.min.css">
+    <link rel="stylesheet" href="./main.css">
     <script src="https://kit.fontawesome.com/93d605acff.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -24,16 +25,31 @@
             <h2 class="brand">DAMI KANG </h2>
                 <p class="sub">by.kangdami@gmail.com <br/>
                </p>
-              
             </div>
             </div>
-
-            <div class="card-middle">
-                <ul>
-                    <li>design skill</li>
-                    <li>coding skill</li>
-                    <li>awsome skill</li>
-                </ul>
+            <div class="card-middle"> <!-- line graph -->
+        
+                <table id="stacked-graph-1" class="charts-css bar hide-data show-labels show-data-on-hover show-primary-axis show-5-secondary-axes data-spacing-10 multiple stacked">
+                    
+                    <caption> Dami Abilities </caption> 
+                    <thead><tr><th scope="col"> Continent </th> 
+                        <th scope="col"> #1 </th> 
+                        <th scope="col"> #2 </th>
+                        <th scope="col"> #3 </th></tr></thead> 
+                        
+                        <tbody><tr><th scope="row"> Design Skill </th> 
+                            <td style="--size:calc(50 / 150);"><span class="data"> 50 </span></td> 
+                             <td style="--size:calc(90 / 150);"><span class="data"> 90 </span></td></tr> 
+                            
+                            <tr><th scope="row"> Coding Skill </th> 
+                                <td style="--size:calc(30 / 150);"><span class="data"> 30 </span></td> 
+                                <td style="--size:calc(95 / 150);"><span class="data"> 95 </span></td></tr> 
+                                                    
+                            <tr><th scope="row"> Awesome Skill </th> 
+                                <td style="--size:calc(20 / 150);"><span class="data"> 20 </span></td> 
+                                <td style="--size:calc(110 / 150);"><span class="data"> 110 </span></td></tr>
+                        </tbody></table>
+    
             </div>
             <hr style="margin: 25px 0 20px 0; border-top: #eee; border-left: #eee;">
         
@@ -160,6 +176,7 @@
             <span class="tooltiptext">illustrator</span>
         </div>
         </div>
+        <span style="margin-top:25px; font-weight: 300; text-align: center; color: gray;"> Learn more my UI UX design works at Behance. </span>
         </section>
 
         <section class="email">
