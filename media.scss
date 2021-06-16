@@ -1,4 +1,12 @@
 @media (min-width: 42em) {
+    main {
+        flex-direction: row;
+    }
+
+    .hero {
+        margin-left:5rem;
+    }
+
     .footer {
        display: grid;
        grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -21,4 +29,10 @@
     .boxes p {
             font-size: 16px;
     }
+
+    .main-card {
+        margin-left: 50px;
+        padding: 20px;
+    }
+
 }
