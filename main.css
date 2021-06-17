@@ -4,10 +4,19 @@
 @media (min-width: 42em) {
   main {
     flex-direction: row;
+    padding: 0 10rem 5rem;
   }
 
   .hero {
     margin-left: 5rem;
+  }
+
+  .middle {
+    padding: 10rem 15rem;
+  }
+
+  .portfolio-cards {
+    flex-direction: row;
   }
 
   .footer {
@@ -95,7 +104,7 @@ main {
   display: flex;
   flex-direction: row;
   margin: 10px auto;
-  padding: 0 10rem 5rem;
+  margin-left: 1rem;
   justify-content: center;
   animation: opacity 0.5s;
   animation-timing-function: ease;
@@ -223,7 +232,6 @@ figure img {
 
 .middle {
   background-color: snow;
-  padding: 10rem 15rem;
 }
 
 .middle p {
@@ -252,6 +260,7 @@ figure img {
 
 .portfolio-cards {
   margin-top: 1em;
+  margin-left: 1rem;
   display: flex;
   flex-direction: row;
   border: 3px;

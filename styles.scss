@@ -1,6 +1,6 @@
+@import './media.scss';
 @import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;700&display=swap');
-@import './media.scss';
 
 :root {
     --width: 100vw;
@@ -63,7 +63,8 @@ main {
     display: flex;
     flex-direction: row;
     margin: 10px auto;
-    padding: 0 10rem 5rem;
+    margin-left: 1rem;
+   
     justify-content: center;
     animation: opacity 0.5s;
     animation-timing-function: ease;
@@ -204,7 +205,7 @@ main {
 
 .middle {
  background-color: snow;
- padding: 10rem 15rem
+ // padding: 10rem 15rem
 }
 
 .middle p {
@@ -233,6 +234,7 @@ main {
 
 .portfolio-cards {
     margin-top: 1em; 
+    margin-left: 1rem;
     display: flex; 
     flex-direction: row;
     border: 3px;

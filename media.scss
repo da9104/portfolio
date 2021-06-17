@@ -1,10 +1,20 @@
 @media (min-width: 42em) {
     main {
         flex-direction: row;
+        padding: 0 10rem 5rem;
     }
 
     .hero {
         margin-left:5rem;
+    }
+
+    .middle {
+        padding: 10rem 15rem;
+    }
+
+    .portfolio-cards {
+        flex-direction: row;
+
     }
 
     .footer {
