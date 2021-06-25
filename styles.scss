@@ -5,15 +5,12 @@
 :root {
     --width: 100vw;
     --full-width: 100vw;
-    
     @media (min-width: 42em) {
       --width: 42rem;
       }
-
     --angle: -11deg;
     /*-----------------
     Magic Number Alert:
-    
     the 0.09719 is calculated by this formula:
     tan(11°) / 2
     11° is the current skewY value.
@@ -26,8 +23,8 @@
 body {
     background: conic-gradient(at top right, snow, mistyrose) no-repeat;
     background-size: 100% cover;
-    margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
     display: flex;
     flex-direction: column;
 };
@@ -47,7 +44,6 @@ nav {
 
     span {
         margin: 0 auto;
-        // display: flex;
         justify-self: center;
         align-self: center;
         color: tomato;
@@ -61,10 +57,9 @@ nav {
 
 main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 10px auto;
     margin-left: 1rem;
-   
     justify-content: center;
     animation: opacity 0.5s;
     animation-timing-function: ease;
@@ -82,7 +77,8 @@ main {
 
 
 .hero {
-   
+    // display: flex;
+    flex-direction: row;
     margin: 1rem 0 0 0;
     padding: 0px;
 
@@ -96,13 +92,12 @@ main {
         text-transform: lowercase;
         font-weight: 100;
         text-align: left;
-        //width: 200px;
         height: 15px;
     }
 
 }
 
-.socialicon a {
+.socialIcon a {
     text-decoration: none;
 }
 
@@ -141,9 +136,6 @@ main {
 .card-middle {
    display: flex;
    flex-direction: row;
-   // margin-bottom: 20px;
-   // gap: 100px;
-
    ul,li {
        font-size: 9px;
        text-transform: uppercase;
@@ -171,10 +163,7 @@ main {
 .main-card {
     margin-left: 15px;
     padding: 15px;
-    // box-shadow: 2px solid;
-    // text-align: center;
     color: black;
-
 
    .main-card-heading {
     font-size: 4rem;
@@ -186,7 +175,6 @@ main {
     }
 
    }
-
 }
 
 .main-btn-section button {
@@ -539,11 +527,6 @@ main {
     //     from {opacity: 10;}
     //     to {opacity: .8; }
     //   }
-}
-
-
-#eamil-btn {
-
 }
 
 
