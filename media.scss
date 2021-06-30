@@ -28,6 +28,10 @@
         font-size: 4rem;
     }
 
+    #middle-heading {
+        font-size: 4rem;
+    }
+
     .footer {
        display: grid;
        grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -36,6 +40,10 @@
     .middle--second {
         padding: 8rem 15rem;
     }
+
+    .middle--second img {
+        margin: 5px;
+    }    
 
     .box {
         padding-bottom: 100%;

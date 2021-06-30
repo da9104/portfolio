@@ -32,6 +32,10 @@
     font-size: 4rem;
   }
 
+  #middle-heading {
+    font-size: 4rem;
+  }
+
   .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -39,6 +43,10 @@
 
   .middle--second {
     padding: 8rem 15rem;
+  }
+
+  .middle--second img {
+    margin: 5px;
   }
 
   .box {
@@ -245,7 +253,7 @@ figure img {
 
 .middle p {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   color: darkseagreen;
   font-weight: 200;
 }
@@ -404,7 +412,7 @@ figure img {
 }
 .middle--second img {
   width: 64px;
-  margin: 5px;
+  margin: 2px;
 }
 .middle--second img:hover {
   transform: translateY(5px);
