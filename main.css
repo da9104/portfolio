@@ -37,10 +37,6 @@
     left: -5em;
   }
 
-  #dot {
-    left: -5em;
-  }
-
   .box {
     padding-top: 30px;
   }
@@ -347,7 +343,7 @@ figure img {
   font-size: 10px;
 }
 .boxes .box {
-  padding-top: 10px;
+  padding-top: 0px;
   text-transform: uppercase;
   font-weight: 700;
   color: snow;
@@ -356,8 +352,6 @@ figure img {
   height: 0;
   padding-bottom: 85%;
   border: 1px solid #fff;
-  border-top: 15px solid #fff;
-  background: #fff3;
   transform: translateY(var(--translation));
 }
 .boxes .box:nth-child(1) {
@@ -379,12 +373,16 @@ figure img {
 }
 
 .dot {
+  background-color: #fff;
   color: gray;
-  margin: 1px;
-  position: relative;
+  text-align: left;
+  margin: 0;
+  padding-bottom: 2px;
   display: block;
-  left: -2.5em;
-  top: -2em;
+  margin-bottom: 25px;
+}
+.dot span {
+  margin-left: 9px;
 }
 
 .middle--second {
@@ -470,12 +468,10 @@ figure img {
   bottom: 100%;
   left: 50%;
   margin-left: -60px;
-  /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
