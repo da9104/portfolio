@@ -1,37 +1,33 @@
 @media (min-width: 42em) {
+   * {
+       box-sizing: border-box;
+   }
     main {
         padding: 0 10rem 5rem;
     }
     .hero {
         display: flex;
         flex-direction: column;
-        margin-left:5rem;
-        // margin-right:5rem;
+        margin-left: 5rem;
     }
     .middle {
         padding: 10rem 15rem;
     }
-
     .profile-card {
         margin-right: 3em;
     }
-
     .portfolio-cards {
         flex-direction: row;
     }
-
     #hero-heading {
         font-size: 4rem;
     }
-
     #email-heading {
         font-size: 4rem;
     }
-
     #middle-heading {
         font-size: 4rem;
     }
-
     .footer {
        display: grid;
        grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -44,7 +40,6 @@
     .middle--second img {
         margin: 5px;
     }    
-
     .box {
         padding-bottom: 100%;
     }
@@ -52,10 +47,7 @@
         margin-left: 50px;
         padding: 20px;
     }
-
     .middle--second #good {
         font-size: 55px;
-
     }
-
 }
