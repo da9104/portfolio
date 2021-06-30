@@ -6,18 +6,26 @@
         display: flex;
         flex-direction: column;
         margin-left:5rem;
+        // margin-right:5rem;
     }
     .middle {
         padding: 10rem 15rem;
     }
 
-    .portfolio-cards {
-        flex-direction: row;
-
+    .profile-card {
+        margin-right: 3em;
     }
 
-    .main-card-heading {
-        font-size: 2rem;
+    .portfolio-cards {
+        flex-direction: row;
+    }
+
+    #hero-heading {
+        font-size: 4rem;
+    }
+
+    #email-heading {
+        font-size: 4rem;
     }
 
     .footer {
@@ -29,19 +37,9 @@
         padding: 8rem 15rem;
     }
 
-    .dot {
-        left: -5.0em; 
-       // top: -3.3em;
-    }
-
     .box {
-        padding-top: 30px;
+        padding-bottom: 100%;
     }
-
-    #box-p {
-       font-size: 16px;
-    }
-
     .main-card {
         margin-left: 50px;
         padding: 20px;

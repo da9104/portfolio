@@ -60,6 +60,7 @@ main {
     flex-direction: column;
     margin: 10px auto;
     margin-left: 1rem;
+    margin-right: 1rem;
     justify-content: center;
     animation: opacity 0.5s;
     animation-timing-function: ease;
@@ -166,7 +167,7 @@ main {
     color: black;
 
    .main-card-heading {
-    font-size: 4rem;
+    font-size: 2rem;
     color: darkseagreen;
     font-weight: 200;
 
@@ -454,7 +455,7 @@ main {
 }
 .email p {
     text-align: center;
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 700;
     color: darkseagreen;
     margin: 5px;

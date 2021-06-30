@@ -16,12 +16,20 @@
     padding: 10rem 15rem;
   }
 
+  .profile-card {
+    margin-right: 3em;
+  }
+
   .portfolio-cards {
     flex-direction: row;
   }
 
-  .main-card-heading {
-    font-size: 2rem;
+  #hero-heading {
+    font-size: 4rem;
+  }
+
+  #email-heading {
+    font-size: 4rem;
   }
 
   .footer {
@@ -33,16 +41,8 @@
     padding: 8rem 15rem;
   }
 
-  .dot {
-    left: -5em;
-  }
-
   .box {
-    padding-top: 30px;
-  }
-
-  #box-p {
-    font-size: 16px;
+    padding-bottom: 100%;
   }
 
   .main-card {
@@ -113,6 +113,7 @@ main {
   flex-direction: column;
   margin: 10px auto;
   margin-left: 1rem;
+  margin-right: 1rem;
   justify-content: center;
   animation: opacity 0.5s;
   animation-timing-function: ease;
@@ -217,7 +218,7 @@ figure img {
   color: black;
 }
 .main-card .main-card-heading {
-  font-size: 4rem;
+  font-size: 2rem;
   color: darkseagreen;
   font-weight: 200;
 }
@@ -497,7 +498,7 @@ figure img {
 
 .email p {
   text-align: center;
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 700;
   color: darkseagreen;
   margin: 5px;
